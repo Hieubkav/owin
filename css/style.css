@@ -1,0 +1,233 @@
+/* Glassmorphism Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Navbar */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    color: #991B1B;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #B45309;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #B45309;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+/* Glowing Text Effects */
+.glow-text {
+    text-shadow: 0 0 10px rgba(153, 27, 27, 0.3);
+}
+
+.glow-text-subtle {
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.3);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #991B1B;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #B45309;
+    padding-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 8px rgba(153, 27, 27, 0.2);
+}
+
+/* Skills Cards */
+.skill-card {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skill-icon {
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px rgba(180, 83, 9, 0.5);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, #991B1B, #B45309);
+    box-shadow: 0 0 8px rgba(180, 83, 9, 0.3);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.85rem;
+    top: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #991B1B;
+    border: 3px solid #B45309;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(180, 83, 9, 0.4);
+}
+
+.timeline-content {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Goal Cards */
+.goal-card {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.goal-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Compensation Box */
+.compensation-box {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(180, 83, 9, 0.2);
+    transition: all 0.3s ease;
+}
+
+.compensation-box:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    border: 1px solid rgba(180, 83, 9, 0.3);
+}
+
+/* Contact Items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Social Icons */
+.social-icon {
+    color: #991B1B;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #B45309;
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px rgba(180, 83, 9, 0.4);
+}
+
+/* Footer */
+.glass-footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .timeline {
+        padding-left: 2rem;
+    }
+    
+    .timeline-dot {
+        left: -2.35rem;
+    }
+    
+    .contact-item {
+        padding: 0.75rem;
+    }
+}
